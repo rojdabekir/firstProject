@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(247, 215, 215);
+}
+
+h1{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(150, 21, 21);
+    text-align: left;
+}
+
+.hr{
+    border-top: 4px dashed rgb(12, 97, 12);
+}
+
+.s{
+    align-items: center;
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.img {
+    --s: 15px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 200px; /* width of the image */
+    --c: rgb(150, 21, 21);
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+}
+
+img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+
+h3{
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(150, 21, 21);
+    text-align: center;
+}
+
+button{
+    background-color: rgb(150, 21, 21);
+    text-align: center;
+    color: rgb(247, 215, 215);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 10%;
+    width: 45%;
+    height: 15%;
+    border: none;
+}
+
+a{
+    color: rgb(247, 215, 215);
+    text-align: center;
+    padding: 12px 14px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 30%;
+    text-transform:uppercase;
+}
+
+article{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: flex-end;
+}
+
+footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
